@@ -21,6 +21,7 @@ export default function CompanyList({ search, handlePressName }) {
           >
             <Image
               style={styles.companyLogo}
+              resizeMode='contain'
               source={{ uri: `${item.logo}` }}
             />
             <View style={styles.companyTextContainer}>
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
 
   companyLogo: {
     height: 50,
-    width: 50,
+    width: 50, 
   },
 
   companyTextContainer: {
